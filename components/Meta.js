@@ -13,7 +13,7 @@ const Meta = ({ title, keywords, description }) => {
 };
 
 Meta.defaultProps = {
-  title: "Bob devs",
+  title: "bruce apos | dev",
   keywords: "Developer, web dev, flutter, javascript, reactjs, nextjs",
   description: "Bob can develop websites and apps.",
 };

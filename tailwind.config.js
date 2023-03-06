@@ -8,9 +8,10 @@ module.exports = {
     extend: {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
+        robotoslab: ["Roboto Slab", "serif"],
       },
       fontSize: {
-        heading: "12.5rem",
+        heading: "10rem",
       },
       backgroundImage: {
         "split-white-black":

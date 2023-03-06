@@ -3,13 +3,13 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className=" relative left-7">
-      <div className=" absolute top-32 left-36">
-        <Image src="/bob.png" width="71" height="71" />
-      </div>
-      <h1 className=" text-heading font-bold drop-shadow-lg font-poppins tracking-tighter">
-        Bob<span className=" font-light text-white">devs</span>
+    <div className="flex items-center ">
+      <h1 className="font-bold tracking-tight text-heading drop-shadow-lg font-poppins">
+        bruce apos
       </h1>
+      <div className="">
+        <Image src="/bob.png" width="150" height="150" />
+      </div>
     </div>
   );
 };
