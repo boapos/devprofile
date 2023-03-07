@@ -3,12 +3,12 @@ import { Typewriter } from "react-simple-typewriter";
 
 const SubHeader = () => {
   return (
-    <div className="relative left-2 bottom-4">
-      <h1 className="inline-block text-5xl tracking-tight font-robotoslab">
+    <div className="relative bottom-4 mt-10">
+      <h1 className="inline-block text-4xl lg:text-5xl tracking-tight font-robotoslab">
         Does{" "}
         <span className="font-bold text-teal-400 drop-shadow-sm">
           <Typewriter
-            words={["ReactJS", "Flutter", "Spring Boot", "AWS Cloud"]}
+            words={["ReactJS.", "Flutter.", "Spring Boot.", "AWS Cloud."]}
             loop={false}
             cursor
             typeSpeed={50}
