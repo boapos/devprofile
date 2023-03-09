@@ -5,7 +5,7 @@ const SubHeader = () => {
   return (
     <div className="relative mt-10 bottom-4">
       <h1 className="inline-block text-4xl tracking-tight lg:text-5xl font-robotoslab">
-        Does{" "}
+        does{" "}
         <span className="font-bold text-teal-400 drop-shadow-sm">
           <Typewriter
             words={["web.", "mobile apps.", "APIs.", "AWS Cloud."]}
