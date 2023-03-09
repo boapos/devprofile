@@ -3,8 +3,8 @@ export default function handler(req, res) {
   let nodemailer = require("nodemailer");
 
   const mailData = {
-    from: process.env.email,
-    to: process.env.email,
+    from: process.env.NEXT_PUBLIC_EMAIL,
+    to: process.env.NEXT_PUBLIC_EMAIL,
     subject: req.body.subject,
     text: req.body.message,
     html: `<div>${req.body.message}</div><p>Sent from:
@@ -14,8 +14,8 @@ export default function handler(req, res) {
     port: 465,
     host: "smtp.gmail.com",
     auth: {
-      user: process.env.email,
-      pass: process.env.password,
+      user: process.env.NEXT_PUBLIC_EMAIL,
+      pass: process.env.NEXT_PUBLIC_PASSWORD,
     },
     secure: true,
   });
