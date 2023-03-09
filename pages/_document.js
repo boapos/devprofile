@@ -4,6 +4,7 @@ export default function Document() {
   return (
     <Html>
       <Head>
+        <link rel="icon" type="image/png" sizes="16x16" href="/bob.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"

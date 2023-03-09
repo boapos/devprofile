@@ -47,7 +47,7 @@ export default function EmailModal() {
             <div>
               <p class="font-bold">Your message was sent!</p>
               <p class="text-sm">
-                I'll get back to you. Pa wait na lang lods :D
+                I&apos;ll get back to you. Pa wait na lang lods :D
               </p>
             </div>
             <svg

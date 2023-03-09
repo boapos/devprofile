@@ -10,13 +10,18 @@ const Footer = () => {
         passHref={true}
       >
         <a target="_blank">
-          <Image src="/linkedin-logo.png" width="50" height="50" />
+          <Image
+            alt="linkedin"
+            src="/linkedin-logo.png"
+            width="50"
+            height="50"
+          />
         </a>
       </Link>
 
       <Link href="https://github.com/boapos" passHref={true}>
         <a target="_blank">
-          <Image src="/github-logo.png" width="50" height="50" />
+          <Image alt="github" src="/github-logo.png" width="50" height="50" />
         </a>
       </Link>
     </div>
