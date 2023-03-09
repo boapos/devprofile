@@ -14,6 +14,7 @@ export default function Document() {
         <link
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Roboto+Slab:wght@300;400&display=swap"
           rel="stylesheet"
+          type="text/css"
         />
       </Head>
 
