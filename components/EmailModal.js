@@ -8,6 +8,13 @@ export default function EmailModal() {
   const [submitted, setSubmitted] = useState(false);
   const [showToast, setShowToast] = useState(false);
 
+  const isBrowser = () => typeof window !== "undefined";
+
+  function scrollToTop() {
+    if (!isBrowser()) return;
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -28,10 +35,10 @@ export default function EmailModal() {
       if (res.status === 200) {
         setSubmitted(true);
         setShowToast(true);
-
         setEmail("");
         setSubject("");
         setMessage("");
+        scrollToTop();
       }
     });
   };
