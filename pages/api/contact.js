@@ -22,9 +22,14 @@ export default async function handler(req, res) {
     });
 
     transporter.sendMail(mailData, function (err, info) {
-      if (err) console.log(err);
-      else console.log(info);
+      if (err) {
+        console.log(err);
+        reject(err);
+      } else {
+        res.status(200).json({ message: "mail sent" });
+        console.log(info);
+        resolve(info);
+      }
     });
-    res.status(200).json({ message: "mail sent" });
   });
 }
