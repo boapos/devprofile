@@ -10,7 +10,7 @@ export default async function handler(req, res) {
     html: `<div>${req.body.message}</div><p>Sent from:
     ${req.body.email}</p>`,
   };
-  return new Promise((resolve, reject) => {
+  await new Promise((resolve, reject) => {
     const transporter = nodemailer.createTransport({
       port: 465,
       host: "smtp.gmail.com",
