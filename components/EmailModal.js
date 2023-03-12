@@ -149,9 +149,13 @@ export default function EmailModal() {
                           cancel
                         </button>
                         <button
-                          onClick={(e) => {
-                            handleSubmit(e);
-                          }}
+                          onClick={
+                            email === "" || subject === "" || message === ""
+                              ? null
+                              : (e) => {
+                                  handleSubmit(e);
+                                }
+                          }
                           type="submit"
                           className="px-6 py-3 mb-1 mr-1 text-sm font-semibold text-white transition-all duration-150 ease-linear bg-teal-400 rounded shadow outline-none active:bg-teal-600 hover:shadow-lg focus:outline-none"
                         >
