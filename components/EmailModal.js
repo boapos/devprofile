@@ -53,9 +53,7 @@ export default function EmailModal() {
           <div class="flex items-center justify-between">
             <div>
               <p class="font-bold">Your message was sent!</p>
-              <p class="text-sm">
-                I&apos;ll get back to you. Pa wait na lang lods :D
-              </p>
+              <p class="text-sm">I&apos;ll get back to you soon :D</p>
             </div>
             <svg
               onClick={() => setShowToast(false)}
@@ -101,7 +99,7 @@ export default function EmailModal() {
                           type="email"
                           id="email"
                           className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 "
-                          placeholder="bobsilog@gmail.com"
+                          placeholder="example@email.com"
                           required
                         />
                       </div>
